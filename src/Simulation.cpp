@@ -22,7 +22,6 @@ void Simulation::run() {
     double apexHeight = 0;
     while (position.y >= 0) {
         trajectory.push_back(position);
-
         // Get apex height
         if (position.y > apexHeight) {
             apexHeight = position.y;
@@ -53,7 +52,7 @@ void Simulation::run() {
 
     // total distance + apex height + Time of flight
     std::cout << "\nSimulation complete.\n";
-    std::cout << "Total distance: " << position.x << " m\n";
+    std::cout << "Total distance: " << trajectory.back().x << " m\n";
     std::cout << "Apex height: " << apexHeight << " m\n";
     std::cout << "Time of flight: " << simTime << " s\n";
 

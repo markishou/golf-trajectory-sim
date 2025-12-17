@@ -25,7 +25,7 @@ Vector2 Vector2::operator-(const Vector2& other) const {
 }
 
 double Vector2::length() const {
-    return std::sqrt(x*x + y*x);
+    return std::sqrt(x*x + y*y);
 }
 
 Vector2 Vector2::normalized() const {
